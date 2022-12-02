@@ -14,7 +14,7 @@ modules in Python. I further practiced using the builtin function
 
 * **1. My first toolbox!**
   * [1-calculation.py](./1-calculation.py): Python program that imports functions
-  from the file [calculator_1.py](./1-calculator.py) and prints the result
+  from the file [calculator_1.py](./calculator_1.py) and prints the result
   of the addition, subtraction, multiplication and division of `10` and `5`.
   * Output: `<a value> <operator> <b value> = <operation(a, b) value>` followed by a new line.
 
