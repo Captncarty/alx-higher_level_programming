@@ -1,12 +1,14 @@
 #!/usr/bin/python3
-import sys
 
 
 def safe_function(fct, *args):
+    """
+    executes a function safely and return the result of the function
+    """
     try:
-        res = fct(*args)
-    except BaseException as e:
-        res = None
+        result = fct(*args)
+        return result
+    except Exception as e:
+        import sys
         print("Exception: {}".format(e), file=sys.stderr)
-    finally:
-        return 
+        return None
