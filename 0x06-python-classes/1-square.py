@@ -1,14 +1,9 @@
 #!/usr/bin/python3
+""" this module defines a class Square"""
+
 
 class Square:
-    """Class Square that has attributes. Instantiation with size
-    Attributes:
-        size (int): The size of the square
-    """
-
+    """ class for Square"""
     def __init__(self, size):
-        """The __init__ method for Square class
-        Args:
-            size: (:obj: 'int'): A private instance size
-        """
+        """ Initialize class """
         self.__size = size
