@@ -7,10 +7,10 @@ Created on Tue Jan 3 2023
 
 
 class Rectangle:
-	"""An empty class that defines a rectangle
+    """An empty class that defines a rectangle
 
-	Attributes:
-		empty
-	"""
+    Attributes:
+         empty
+    """
 
-	pass
+    pass
