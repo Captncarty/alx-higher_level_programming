@@ -1,31 +1,31 @@
 #!/usr/bin/python3
 
-BaseGeometry = __import__('7-base_geometry').BaseGeometry
+Rectangle = __import__('9-rectangle').Rectangle
 
 
-class Square(BaseGeometry):
+class Square(Rectangle):
     """
-    A Square class shape, inheirts from BaseGeometry
+        Square  inherits from Rectangle
+        Attributes:
+            size (int): side of square
+        Methods:
+            __init__ - initialises the square
     """
     def __init__(self, size):
-        """"
-        Init function for Square
-        Attributes:
-            size (int): The size of the square
+        """
+            initialises Square
         """
         self.integer_validator("size", size)
-        self.__size = size
 
-    def __str__(self):
-        """
-        str funtion to print with/height
-        Returns:
-            Return width/height
-        """
-        return '[Square] ' + str(self.__size) + '/' + str(self.__size)
+        self.__size = size
 
     def area(self):
         """
-        A function that calculates the area of the Square
+            Returns the area of square
         """
-        return self.__size ** 2
+        area = self.__size * self.__size
+        return area
+
+    def __str__(self):
+        return ("[{}] {}/{}".format(type(self).__name__,
+                                    self.__size, self.__size))
