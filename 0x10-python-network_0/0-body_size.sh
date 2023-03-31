@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-curl -s "$" | wc -l
+curl -s "$1" | wc -l
