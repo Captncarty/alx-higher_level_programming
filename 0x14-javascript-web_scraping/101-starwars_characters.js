@@ -16,7 +16,6 @@ request(url + arg, function (error, response, body) {
     const characters = JSON.parse(body).characters;
     printCharacters(characters, 0);
   }
-  console.log(JSON.parse(body).characters[0]);
 });
 /* running a function through */
 function printCharacters (characters, index) {
